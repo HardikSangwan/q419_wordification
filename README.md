@@ -15,8 +15,7 @@ Output -> "1-800-PAINTER"
 
 #Requirements
 
-Code written in Python 3.7.5. 
-Install requirements using pip install -r requirements.txt
+Code written in Python 3.7.5. Install requirements using pip install -r requirements.txt
 
 #Execution
 
@@ -26,7 +25,7 @@ Run python main.py with the following arguments to execute the functions:
 	python main.py --wordify 1-800-724-6837
 -> --numerify for words_to_numbers followed by wordified number to reverse. Example:
 	python main.py --numerify 1-800-PAINTER
---> --all for all_wordifications followed by number.
+-> --all for all_wordifications followed by number.
 
 All functions output strings to console.
 
@@ -39,5 +38,10 @@ numbers_to_words: Check for longest word that will fit into the number based on 
 words_to_numbers: Simply iterates over input string and replaces letters with corresponding numbers using a dictionary. For example 'A' and 'B' and 'C' would all map to 2.
 
 all_wordifications: Build a dictionary with all possible contiguous substrings of the phone number as keys and all possible words combinations for that substring as the values for that particular key.
+
+#Assumptions
+Dash locations for a 'non-wordified' phone number always follow the pattern "1-111-111-1111". So dashes at indexes 1, 5 and 9.
+
+
 
 
