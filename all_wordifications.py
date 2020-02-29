@@ -39,7 +39,7 @@ def dashes_fix(wordifiedNum):
 	return wordifiedNum
 
 
-def number_to_words(num):
+def all_wordifications(num):
 	#Remove Dashes from number. Add Back later
 	num = num.replace('-','')
 	if len(num) != 11:
@@ -56,13 +56,14 @@ def number_to_words(num):
 	possWords = filter(lambda word: let_to_num(word) in num, engDict)
 	possWords = sorted(list(possWords), key = len)
 
-	#Create wordified number from longest words that fit in number from list of possible words
+	#Print wordified numbers from list of possible words
+	print(dashes_fix(num))
 	for word in possWords: 
 		wordifiedNum = num.replace(let_to_num(word), '-' + word + '-')
+		wordifiedNum = dashes_fix(wordifiedNum)
+		print(wordifiedNum)
 
-	wordifiedNum = dashes_fix(wordifiedNum)
-	print(wordifiedNum)
 	return wordifiedNum
 
 if __name__ == "__main__":
-	number_to_words("1-782-688-6222")
+	all_wordifications("1-230-000-0000")

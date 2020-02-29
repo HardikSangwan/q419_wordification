@@ -25,6 +25,6 @@ def words_to_number(wordifiedNum):
 	return num
 
 if __name__ == "__main__":
-	words_to_number("1-222-222-1222")
+	words_to_number("1-CAB-QUANTUM")
 
 

@@ -41,10 +41,11 @@ words_to_numbers: Simply iterates over input string and replaces letters with co
 
 all_wordifications: Build a dictionary with all possible contiguous substrings of the phone number as keys and all possible words combinations for that substring as the values for that particular key.
 
-# Assumptions
+# Notes and Assumptions
 Dash locations for a 'non-wordified' phone number always follow the pattern "1-111-111-1111". So dashes at indexes 1, 5 and 9.
 US Phone Number always starts with the number 1.
 Length of Phone Number is always 11.
+Wordifications will directly depend on the dictionary used.
 
 
 
